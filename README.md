@@ -6,13 +6,12 @@ curl https://raw.githubusercontent.com/sup39/zsh-setup/master/setup.sh | sh -
 ```
 Alternatively, use the shortened url:
 ```zsh
-curl -L http://pr8.work/0/sup39-zsh | sh -
+# try the following command
+# until the first line of the content becomes `#!/bin/sh`
+curl -L pr8.work/0/sup39-zsh
+# and then execute the setup script
+curl -L pr8.work/0/sup39-zsh | sh -
 ```
-However, it may fails to redirect. You may print the content before execute it.
-```
-curl -L http://pr8.work/0/sup39-zsh
-```
-Check if the first line is `#/bin/sh`.
 
 ### zshrc only
 ```zsh
