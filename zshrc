@@ -46,5 +46,6 @@ zle -N zle-line-init
 zle -N zle-keymap-select
 
 ## Alias
+alias vi='vim'
 alias curl-json='curl -H"Content-Type:application/json"'
 alias rand-sel='shuf -n1 -e --'
