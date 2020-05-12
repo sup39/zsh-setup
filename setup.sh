@@ -1,7 +1,6 @@
 #!/bin/sh
 # .zshrc
 curl https://raw.githubusercontent.com/sup39/zsh-setup/master/zshrc -o $HOME/.zshrc
-[ $SHELL = "/bin/zsh" ] && . $HOME/.zshrc # auto source zshrc
 # .vim/sup39
 [ -d $HOME/.vim/sup39 ] || git clone https://github.com/sup39/vimrc $HOME/.vim/sup39
 # .vimrc
