@@ -16,6 +16,7 @@ curl -L pr8.work/0/sup39-zsh | sh -
 ### zshrc only
 ```zsh
 curl https://raw.githubusercontent.com/sup39/zsh-setup/master/zshrc >> $HOME/.zshrc
+source $HOME/.zshrc
 ```
 
 ## Content
