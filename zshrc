@@ -3,6 +3,11 @@
 setopt interactivecomments
 # disable ^S ^Q
 stty stop undef start undef
+# history
+HISTFILE=~/.zsh_history
+HISTSIZE=1000 # memory
+SAVEHIST=1000 # file
+setopt appendhistory
 
 ## Input
 # use vim mode
