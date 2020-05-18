@@ -14,6 +14,9 @@ setopt appendhistory
 bindkey -v
 # imap jk to <ESC>
 bindkey -Mviins -s jk '\e'
+# map ¥ to \
+bindkey -Mvicmd -s r¥ 'r\'
+bindkey -Mviins -s ¥ '\\'
 
 ## Edit
 # edit zshrc
@@ -43,7 +46,7 @@ function zle-line-init zle-keymap-select {
     vicmd) # normal mode
       PS1="%F{200}%n@$host%f:%1~%# ";;
     main) # insert mode
-      PS1="%F{50}%n@$host%f:%1~%# ";;
+      PS1="%F{49}%n@$host%f:%1~%# ";;
   esac
   zle reset-prompt
 }
