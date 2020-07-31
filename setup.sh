@@ -2,7 +2,7 @@
 # .zshrc
 [ -f $HOME/.zshrc ] || curl https://raw.githubusercontent.com/sup39/zsh-setup/master/zshrc -o $HOME/.zshrc
 # .zshenv
-[ -f $HOME/.zshenv ] || curl https://raw.githubusercontent.com/sup39/zsh-setup/master/zprofile -o $HOME/.zshenv
+[ -f $HOME/.zshenv ] || curl https://raw.githubusercontent.com/sup39/zsh-setup/master/zshenv -o $HOME/.zshenv
 
 # .vim/sup39
 [ -d $HOME/.vim/sup39 ] || git clone https://github.com/sup39/vimrc $HOME/.vim/sup39
