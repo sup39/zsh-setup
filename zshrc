@@ -14,14 +14,12 @@ setopt appendhistory
 bindkey -v
 # imap jk to <ESC>
 bindkey -Mviins -s jk '\e'
-# map ¥ to \
-bindkey -Mvicmd -s r¥ 'r\'
-bindkey -Mviins -s ¥ '\\'
 
 ## Edit
 # edit zshrc
 vizr() {vi $HOME/.zshrc && source $HOME/.zshrc}
-sczr() {source $HOME/.zshrc}
+# edit zshenv
+vize() {vi $HOME/.zshenv && . $HOME/.zshenv}
 # edit zprofile
 vizp() {vi $HOME/.zprofile && . $HOME/.zprofile}
 # edit vimrc
@@ -55,5 +53,4 @@ zle -N zle-keymap-select
 
 ## Alias
 alias vi='vim'
-alias curl-json='curl -H"Content-Type:application/json"'
-alias rand-sel='shuf -n1 -e --'
+alias ls='ls --color=auto'
